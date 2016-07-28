@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import org.greenrobot.eventbus.EventBus;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -39,6 +41,7 @@ public class BlankFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: ");
+                EventBus.getDefault().post(new MagicEvent());
             }
         });
     }
