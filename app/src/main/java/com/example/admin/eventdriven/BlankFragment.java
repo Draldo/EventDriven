@@ -41,7 +41,7 @@ public class BlankFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: ");
-                EventBus.getDefault().post(new MagicEvent());
+                EventBus.getDefault().post(new MagicEvent("Aldo Rocks!"));
             }
         });
     }

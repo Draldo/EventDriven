@@ -21,7 +21,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Subscribe
     public void doEventMagic(MagicEvent magicEvent){
-        Log.d(TAG, "doEventMagic: ");
+        Log.d(TAG, "doEventMagic: " + magicEvent.getText());
+    }
+
+    @Subscribe
+    public void doEventMagic2(MagicEvent magicEvent){
+        Log.d(TAG, "doEventMagic test: " + magicEvent.getText());
     }
 
     @Override
